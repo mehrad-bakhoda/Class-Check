@@ -2,7 +2,7 @@ import { useState } from "react";
 import { prisma } from "../../lib/prisma";
 import { Container } from "@mui/material";
 import Pagination from "@mui/material/Pagination";
-import styles from "../../styles/classCard.module.css";
+import styles from "../../styles/ClassCard.module.css";
 import usePagination from "../../components/Pagination";
 import superjson from "superjson";
 import randomstring from "randomstring";
