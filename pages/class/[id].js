@@ -2,10 +2,10 @@ import { useState } from "react";
 import { prisma } from "../../lib/prisma";
 import { Container } from "@mui/material";
 import Pagination from "@mui/material/Pagination";
-import StudentCard from "../../components/StudentCard";
-import styles from "../../styles/StudentCard.module.css";
+import styles from "../../styles/classCard.module.css";
 import usePagination from "../../components/Pagination";
 import superjson from "superjson";
+import randomstring from "randomstring";
 
 import Loader from "../../components/Loader";
 
@@ -24,13 +24,11 @@ export default function Protected({ students }) {
       <Container className={styles.container} fixed>
         <h1 className={styles.title}>List of Students</h1>
       </Container>
-      {dataP.currentData().map((post) => {
-        return (
-          <div key={post.id} className={styles.card}>
-            <StudentCard name={post} />
-          </div>
-        );
-      })}
+      <ul>
+        {dataP.currentData().map((post) => {
+          return <li key={randomstring.generate(5)}>{post}</li>;
+        })}
+      </ul>
       <Container className={styles.fixedBottom} fixed>
         <Pagination
           count={count}
