@@ -1,0 +1,54 @@
+.title {
+    width: 102%;
+    letter-spacing: 1em;
+    text-align: center;
+    padding: 2rem;
+    color: #212121;
+  
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.cardBox{
+    margin:0.5rem;
+
+}
+.card{
+    display: inline-block;
+    width: 33.3%;
+
+
+}
+.subText{
+    opacity: 0.5;
+
+}
+.fixedBottom {
+    position: fixed;
+    display: flex;
+
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+@media (max-width: 837px) {
+    .card{
+        width: 50%;
+  
+      }
+  }
+  @media (max-width: 561px) {
+    .card{
+        width: 100%;
+
+      }
+  }
+
+

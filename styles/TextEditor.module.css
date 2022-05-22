@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tags_container {
+  display: grid;
+  place-items: center;
+}
+.border {
+  border: 5px solid #112e51;
+  margin: 2rem;
+}
+.header {
+  width: 102%;
+  letter-spacing: 1em;
+  text-align: center;
+  padding: 2rem;
+  color: #212121;
+}
+.button {
+  border-radius: 10px;
+  margin: 0.5rem;
+  display: inline-block;
+  background-color: #112e51;
+}
+.submit_buttons {
+  margin: 0.5rem;
+  border-radius: 10px;
+  background-color: #205493;
+}
+.title {
+  width: 100%;
+  margin: 2rem;
+}
+.preview {
+  margin: 2rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media (max-width: 670px) {
+  .container {
+    display: grid;
+    place-items: center;
+  }
+}
+.image {
+  width: 100%;
+}
+.image_container {
+  width: 33%;
+}
